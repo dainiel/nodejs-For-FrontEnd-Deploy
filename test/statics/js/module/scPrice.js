@@ -1,0 +1,1 @@
+function getPrice(d){var a=[20,120,500],c=[59,3,2.5,2],b=[];d<a[0]?b.push(c[0]):d>=a[0]&&d<a[1]?(b.push(c[0]),b.push((d-a[0])*c[1])):d>=a[1]&&d<a[2]?(b.push(c[0]),b.push((a[1]-a[0])*c[1]),b.push((d-a[1])*c[2])):d>=a[2]&&(b.push(c[0]),b.push((a[1]-a[0])*c[1]),b.push((a[2]-a[1])*c[2]),b.push((d-a[2])*c[3]));return b};

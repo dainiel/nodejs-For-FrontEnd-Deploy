@@ -1,0 +1,1 @@
+seajs.config({alias:{global:"module/global",jquery:"base/jquery/1.9.1/jquery",scValidator:"module/scValidator",scPlaceholder:"module/scPlaceholder",scSearch:"module/scSearch",scHelpClick:"module/scHelpClick"},plugins:["shim"],shim:{jquery:{exports:"jQuery"}}});

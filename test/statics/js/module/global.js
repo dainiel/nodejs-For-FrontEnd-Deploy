@@ -1,0 +1,1 @@
+define("global",function(c,b){var a={login:"/loginAjax.do",loginSuccess:"/data_center.do",register:"",registerSuccess:"",reset:"",resetSuccess:"",resetPsw:""};a.resetPswSuccess=a.loginSuccess;b.config=a});

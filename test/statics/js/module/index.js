@@ -1,0 +1,1 @@
+seajs.use("jquery",function(a){a(function(){var b=a("#contact-qq");if("fixed"!=b.css("position")){var c=a(window),d=b.offset().top;c.scroll(function(){var a=c.scrollTop();b.stop().animate({top:a+d})})}})});

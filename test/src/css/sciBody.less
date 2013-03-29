@@ -1,0 +1,60 @@
+/* 右侧交谈 */
+.scf-talk{
+	position:fixed;_position:absolute;top:610px;right:10px;
+
+	.talk-link{display:block;width:82px;height: 27px;background:url("@{bgSrc}/index/sciBody.png") no-repeat -258px 0;
+		&:hover{.bgPosition(-258px, -45px);}
+		&:active{.bgPosition(-258px, -85px);}
+	}
+}
+
+/* 图片展示区 */
+.sci-show-content{
+	height:879px;background:url("@{bgSrc}/index/showBg1.png") repeat-x;
+
+	/* 主要显示区域 */
+	.center {position:relative;}
+
+	/* 注册按钮 */
+	.register-quick-btn{position:absolute;top:172px;right:55px;}
+
+	/* 展示文字 */
+	.word-show{height:377px;text-indent:-9999px;background:url("@{bgSrc}/index/showWord1.png") no-repeat;}
+
+	/* 展示图片 */
+	.pic-show{position:absolute;left:0;top:305px;width:100%;height:451px;background:url("@{bgSrc}/index/showPic1.png") no-repeat top center;}
+	.pic-show{_background:url("@{bgSrc}/index/showPic1-ie6.png") no-repeat top center;}
+}
+
+/* 文字介绍区 */
+.sci-intro{margin-bottom:90px;}
+.sci-intro-item{float:left;_display:inline;color:#4B4949;margin:0 20px;width:280px;
+	h3{height:36px;padding-left:55px;margin-bottom:10px;font:bold 18px/32px @fontFamilyYahei;background:url("@{bgSrc}/index/sciBody.png") no-repeat 0 -251px;}
+	p{font-size:14px;line-height:1.8;}
+}
+.sci-intro-list{
+	.item-one{width:290px;margin-right:10px;}
+	.item-two h3{padding-left:43px;background-position:0 -348px}
+	.item-three h3{padding-left:45px;background-position:0 -448px}
+}
+
+
+/* 成功案例 */
+.sci-cases{
+	position:relative;overflow:hidden;
+
+	.sci-cases-inner{width:1200px;margin-top:20px;border-style:solid;border-color:#E1DFDC;border-width:1px 0;padding:34px 0 28px;}
+	h2{position:absolute;left:50%;margin-left:-34px;top:11px;font:normal 14px/1.2 @fontFamilyYahei;color:#4B4949;text-align:center;background-color:@bodyBgColor;width:68px;}
+}
+.sci-case-box{
+	span {float:left;background:url("@{bgSrc}/index/sciCase.jpg") no-repeat;margin-right:55px;}
+	/* 得出宽高的函数 */
+	.case (@width, @height){width:@width;height:@height;}
+
+	.case-17173{.case(106px, 49px);}
+	.case-dxy{.case(128px, 49px);.bgPosition(0px, -55px);}
+	.case-sohutv{.case(116px, 49px);.bgPosition(0px, -110px);}
+	.case-sohupass{.case(115px, 49px);.bgPosition(0px, -165px);}
+	.case-anquanbao{.case(125px, 49px);.bgPosition(0px, -225px);}
+	.case-zhihu{.case(100px, 49px);.bgPosition(0px, -280px);}
+}

@@ -1,0 +1,49 @@
+/* 帮助页面 */
+.sch-container{margin-top:50px;overflow:hidden;}
+
+/* 侧边栏 */
+.sch-sidebar{float:left;width:164px;border-right:1px solid #e1dfdc;padding-bottom:3230px;margin-bottom:-3000px;}
+.sch-nav-list{padding-top:19px;}
+.sch-nav-item{margin-bottom:20px;height:34px;position:relative;
+	h3{cursor:pointer;font-size:14px;font-weight:normal;height:34px;line-height:34px;text-indent:20px}
+}
+.sch-nav-list .selected h3{position:absolute;left:0;top:0;color:#fff;width:100%;padding-right:14px;background:url("@{bgSrc}/help/schBody.png") no-repeat;}
+#sch-search-item{display:none;}
+	/* 搜索 */
+.sch-search{width:156px;
+	.search-ipt{border:none;.border-radius(4px 0 0 4px);outline:none;height:30px;border:1px solid #B8B8B8;line-height:32px;width:105px;padding-left:20px;border-right:1px solid #B8B8B8;
+		&:focus{.iptFocus();}
+	}
+	.search-btn{display:inline-block;.border-radius(0 4px 4px 0);border:1px solid #B8B8B8;border-left:none;vertical-align:top;*vertical-align:0;width:28px;height:30px;background:#E7E7E7 url("@{bgSrc}/help/schBody.png") no-repeat 0 -100px;
+		&:active{.bgPosition(0, -160px);}
+	}
+}
+
+/* 问答内容 */
+.sch-contents{float:left;width:794px;}
+.sch-content-list{padding-top:23px;}
+.sch-content-item{margin-left:35px;padding-bottom:12px;line-height:2;
+	.question{font-size:14px;font-weight:normal;
+		a{color:@bodyColor;
+			&:hover{color:@linkColorHover;}
+		}
+	}
+	.answer{display:none;margin-top:5px;margin-left:28px;
+		a{color:@scBlue;
+			&:hover{text-decoration:underline}
+		}
+	}
+}
+.sch-content-list .selected .answer{display:block}
+.sch-content-list .selected .question a{color:@linkColorHover;}
+
+/* 右侧搜索结果 */
+.search-content{
+	.no-result{margin:90px 0 0 250px;padding-left:65px;min-height:52px;_height:52px;font-size:14px;line-height:2;background:url("@{bgSrc}/help/schBody.png") no-repeat 0 -308px;
+		.line-one{}
+		.line-two{color:#a9a9a9;}
+		.line-three{padding-top:11px}
+	}
+
+	.key-word{color:@scBlue;}
+}

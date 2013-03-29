@@ -1,0 +1,1 @@
+seajs.use(["jquery","scValidator"],function(a,b){a(function(){(new b.login({form:".scr-wrapper",id:"#username",password:"#password",remember:"#remPwd",submit:"#login",submitIng:"#login-ing"})).initialize()})});

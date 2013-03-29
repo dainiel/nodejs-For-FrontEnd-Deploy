@@ -1,0 +1,60 @@
+/* 背景颜色 */
+@bodyBgColor: #fcfcfc;
+/* 整体颜色 */
+@scBlue : #4183c4;
+@bodyColor : #4c4a4a;
+/* 雅黑字体 */
+@fontFamilyYahei : 'Microsoft YaHei',"微软雅黑",SimSun,tahoma,arial;
+/* 图片路径 */
+@bgSrc : "../images";
+/* 转换背景 */
+.bgPosition(@x, @y) {background-position: @x @y;}
+/* 圆边 */
+.border-radius(@radius) {border-radius: @radius;-moz-border-radius: @radius;-webkit-border-radius: @radius}
+/* 阴影 */
+.box-shadow(@shadow) {box-shadow: @shadow;-moz-box-shadow: @shadow;-webkit-box-shadow: @shadow}
+/* 变换 */
+.transition(@transition){transition:@transition;-moz-transition:@transition;-webkit-transition:@transition;}
+
+/* 顶部链接颜色 */
+@linkColor : #4c4a4a;
+@linkColorHover : #4183c4;
+
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th,td{margin: 0;padding: 0;}
+body, button, input, select, textarea {font: 12px/1.2 tahoma,arial;color:@bodyColor;}
+html,body{width:100%;height:100%;}
+h1, h2, h3, h4, h5, h6 {font-size: 100%;}
+ul, ol {list-style: none outside none;}
+a {text-decoration: none;}
+a:hover {text-decoration: none;}
+legend {color: #000000;}
+fieldset, img {border: 0 none;}
+button, input, select, textarea {font-size: 100%;}
+table {border-collapse: collapse;border-spacing: 0;}
+.clearfix:after {content: ".";display: block;height: 0;clear:both;visibility: hidden;}
+.clearfix{*zoom:1;}
+
+/* 设置整体样式 */
+body{background-color: @bodyBgColor}
+.center{width:960px;margin:0 auto;}
+.scf-container{padding-top:60px;}
+
+/* 标题 */
+.scf-title-one{font:bold 18px/2 @fontFamilyYahei;border-bottom:1px solid #e1dfdc;
+	.cur-position{font-size:14px;font-weight:normal}
+}
+
+/* input输入框 */
+.iptFocus() {border-color: rgb(82, 168, 236);.box-shadow(inset 0 1px 1px rgba(0,0,0,.075));.box-shadow(0 0 8px rgba(82,168,236,.6))}
+
+
+/* 全局按钮 */
+/* 立即注册按钮 */
+.register-quick-btn{display:inline-block;width:239px;height:59px;background:url("@{bgSrc}/index/sciBtn.png") no-repeat;
+	&:hover{background-position:0 -70px}
+	&:active{background-position:0 -140px}
+}
+
+/* 模块 */
+.placeholder{position:absolute;color:#e1dfdc;font-family:@fontFamilyYahei;font-size:12px;}

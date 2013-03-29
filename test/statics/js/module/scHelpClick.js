@@ -1,0 +1,1 @@
+define(function(){return function(a,b,c){a.on("click",".question a",function(a){a.preventDefault();$("currentTarget");b.trigger("selected",[c])});b.on("selected",function(b,d){d==c?a.toggleClass("selected"):a.removeClass("selected")})}});

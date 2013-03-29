@@ -1,0 +1,1 @@
+seajs.use(["jquery","scValidator"],function(a,b){a(function(){(new b.resetPwd({form:".scr-wrapper",id:"#username",password:"#password",password2:"#password2",remember:"#remPwd",submit:"#resetPwd",submitIng:"#resetPwdIng"})).initialize()})});

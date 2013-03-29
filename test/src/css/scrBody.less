@@ -1,0 +1,86 @@
+@scrColor : #4c4a4a;
+/* 顶部logo */
+.scr-header{
+	.logo{display:block;margin:113px auto 40px;width:251px;height:47px;background:url("@{bgSrc}/logAndReg/scrBody.png") no-repeat;}
+}
+
+/* 登陆&注册主要框体 */
+.scr-body{width:388px;margin:0 auto;color:#4c4a4a;}
+.scr-wrapper{background:url("@{bgSrc}/logAndReg/scrBody-y.png") repeat-y;}
+.scr-wrapper-top{background:url("@{bgSrc}/logAndReg/scrWrapperBgTop.png") no-repeat;}
+.scr-wrapper-inner{position:relative;background:url("@{bgSrc}/logAndReg/scrWrapperBgBottom.png") no-repeat left bottom;min-height:393px;_height:393px;}
+
+/* 内部信息填写 */
+/* 通用 */
+.scr-wrapper {
+	.msg,.msg2 {display:none;position:absolute;font-size:14px;width:100%;text-align:center;left:0;top:17px;}
+	.msg2{top:9px;}
+	.error{color:#ff0000;}
+	.ipt,.pwd{display:block;outline:none;font-family:@fontFamilyYahei;color:@scrColor;padding:4px 6px;height:20px;line-height:20px;width:298px;border:1px solid #cccccc;.transition(all linear .2s);.box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.075));.border-radius(4px);background:none;}
+	.ipt:focus,.pwd:focus{.iptFocus();}
+	/* checkbox额外选择 */
+	.remPwd{vertical-align:middle;margin-right:10px}
+}
+
+/* 登陆注册信息提示 */
+.scr-advice{
+	line-height: 1.8;margin-top: 8px;margin-left:120px;
+	a{color:@linkColorHover;
+		&:hover{text-decoration: underline;}
+	}
+}
+
+/* 登陆 */
+.scr-log-form-list{margin-left:42px;padding-top:70px;
+	.scr-form-item{margin-bottom:32px;position:relative;}
+	.prefix{color:@scrColor;display:inline-block;font:normal 14px/1.2 @fontFamilyYahei;margin-bottom:8px}
+	.pwd{margin-bottom:8px}
+
+	.scr-log-item{position:relative;padding-top:15px}
+}
+
+.log-btn,.log-ing-btn,.reg-btn,.reg-ing-btn,.forget-btn,.forget-ing-btn,.confirm-pwd-btn{display:inline-block;width:300px;height:40px;background:url("@{bgSrc}/logAndReg/scrBody.png") no-repeat 0 -70px;}
+.log-btn:active{.bgPosition(0, -125px)}
+.log-ing-btn{display:none;position:absolute;left:0;top:15px;.bgPosition(-320px, -70px)}
+
+/* 注册 */
+.scr-reg-form-list{margin-left:42px;padding-top:11px;
+	.scr-form-item{margin-top:31px;position:relative}
+	.scr-confirm-item{margin-top:10px}
+	.scr-reg-item{position:relative;margin-top:23px;}
+}
+.reg-btn{.bgPosition(0, -180px);
+	&:active{.bgPosition(0, -230px)}
+}
+.reg-ing-btn{display:none;position:absolute;left:0;top:0;.bgPosition(-320px, -180px)}
+
+/* 注册成功 */
+.scr-reg-suc,.scr-reg-error{text-align:center;line-height:2;font-family:@fontFamilyYahei;padding-top:145px;background:url("@{bgSrc}/logAndReg/successIcon.png") no-repeat 157px 65px;
+	h2{font-size:18px;margin-bottom:8px;}
+	.words{}
+	.log-btn{margin-top: 57px}
+}
+
+/* 忘记密码 */
+.forget-btn{.bgPosition(0, -290px);
+	&:active{.bgPosition(0, -345px)}
+}
+.forget-ing-btn{display:none;position:absolute;left:0;top:0;.bgPosition(-320px, -290px)}
+
+.scr-forget{padding-top:60px;margin-left: 42px;font-family:@fontFamilyYahei;
+	h2{font-size:18px;line-height:2;margin-bottom:40px}
+	label{display:block;height:32px;line-height:32px;font-size:14px;}
+	.forget-btn-box{position:relative;margin-top:72px}	
+}
+
+/* 重置密码 */
+.confirm-pwd-btn{.bgPosition(0, -400px);
+	&:active{.bgPosition(0, -450px)}
+}
+
+/* 重置密码页面过期 */
+.scr-reg-error{background:url("@{bgSrc}/logAndReg/errorIcon.png") no-repeat center 65px;
+	a{color:@linkColorHover;
+		&:hover{text-decoration: underline;}
+	}
+}

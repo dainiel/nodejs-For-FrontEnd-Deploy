@@ -1,0 +1,41 @@
+/* 定价 */
+.scp-container{margin-top:50px;
+	.scf-title-one{margin-bottom:15px;}
+	h3{font:bold 14px/2 @fontFamilyYahei;margin-top:20px;margin-bottom:2px;}
+	.extra-info-1,.extra-info-2{font:bold 14px/2 @fontFamilyYahei;color:@scBlue;
+		.cube{display:inline-block;width:10px;height:10px;font-size:0;background-color:@scBlue;margin-right:8px;}
+	}
+	.extra-info-1{}
+	.extra-info-2{font-weight:normal;font-size:12px}
+}
+
+/* 计费方式 */
+.scp-price-list{background:url("@{bgSrc}/price/scpBody.png") no-repeat;}
+.scp-price-item{float:left;width:170px;height:190px;text-align:center;
+	.num,.price{font:normal 16px/1.5 @fontFamilyYahei;color:#fff;}
+	.num{margin-top:66px;}
+	.price{font-size:30px;}
+}
+
+/* 价格计算 */
+.scp-price-table{@borderColor: #E1DFDC;
+	width:704px;border:1px solid @borderColor;
+	.col-1{}
+	.col-2{width:270px;}
+	.col-3{width:105px;font-weight:bold}
+	th,td{height:40px;font-size:14px;text-align:left;border-bottom:1px solid @borderColor;}
+	/* 头部 */
+	thead{background:url("@{bgSrc}/price/scpBody-x.png") repeat-x;}
+	th{height:50px;}
+	.ipt-num{outline:none;color:@scBlue;font-size:14px;font-weight:bold;.border-radius(4px);background:transparent;height:28px;line-height:28px;width:208px;padding-right:10px;margin-left:125px;text-align:right;border:1px solid #cccccc;
+		&:focus{.iptFocus();}
+	}
+
+	/* 主体 */
+	.tr-diff{background-color:#F4F4F4}
+	.td-one{padding-left:60px;}
+	.td-one{padding-left:60px;}
+	.td-three{font-weight:bold;}
+	.sum td{color:@scBlue;height:50px;font-weight:bold}
+	.extra-choice{vertical-align:middle;margin-right:10px}
+}
