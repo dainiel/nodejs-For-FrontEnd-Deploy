@@ -1,6 +1,6 @@
 #基于nodejs的前端静态文件打包部署工具
 v1
-搜狐武研院 张徐辰 ccnueca@gmail.com
+ccnueca@gmail.com
 
 ##简介
 1. 使用nodejs的fileSystem进行文件遍历；
